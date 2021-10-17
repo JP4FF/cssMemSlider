@@ -38,8 +38,18 @@ footer {
 
   text-align: center;
 }
-.header-container h1 {
-  /* font-size:  */
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1400px;
+  margin: 30px auto;
+}
+.footer-container a {
+  font-size: 22px;
+  color: #FBFCFC;
+  text-decoration: none;
 }
 
 main {
