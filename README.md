@@ -1,3 +1,3 @@
 # cssMemSlider
 
-https://github.com/JP4FF/cssMemSlider/tree/gh-pages/cssMemSlider/index.html
+https://JP4FF.github.io/cssMemSlider/cssMemSlider/index.html
