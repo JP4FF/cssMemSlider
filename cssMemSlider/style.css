@@ -87,7 +87,7 @@ body {
 		padding: 20px 10px 20px 10px;
 	}
 	.header-container h1 {
-		font-size: 16px;
+		font-size: 22px;
 		text-align: center;
 		letter-spacing: 1px;
 	}
@@ -120,6 +120,11 @@ body {
 @media (max-width: 768px) {
 	.footer-container a {
 		font-size: 12px;
+	}
+}
+@media (max-width: 540px) {
+	.footer-container a {
+		font-size: 14px;
 	}
 }
 /* ==================================== */
@@ -230,7 +235,7 @@ main {
 }
 @media (max-width: 768px) {
 	.container .slider-panel {
-		height: 70px;
+		height: 90px;
 		padding: 10px 15px;
 	}
 }
@@ -267,6 +272,7 @@ main {
 	letter-spacing: 1.1px;
 	order: 1;
 	opacity: 0;
+	overflow-y: auto;
 	-webkit-transition: opacity ease-in-out 0.8s;
 	-moz-transition: opacity ease-in-out 0.8s;
 	-o-transition: opacity ease-in-out 0.8s;
@@ -274,7 +280,7 @@ main {
 }
 @media (max-width: 768px) {
 	.caption {
-		font-size: 11px;
+		font-size: 13px;
 	}
 }
 @media (max-width: 540px) {
@@ -302,8 +308,8 @@ main {
 
 .controls label {
 	display: inline-block;
-	height: 1.2vw;
-	width: 1.2vw;
+	height: 1.4vw;
+	width: 1.4vw;
 	border-radius: 50%;
 	border: 2px solid #ff7017;
 	background-color: #ff7017;
@@ -315,12 +321,12 @@ main {
 	transition: background ease-in-out 0.5s, border-color ease-in-out 0.5s;
 }
 .controls label:not(:last-child) {
-	margin-right: 6%;
+	margin-right: 7%;
 }
 @media (max-width: 768px) {
 	.controls label {
-		height: 12px;
-		width: 12px;
+		height: 14px;
+		width: 14px;
 		border: 1px solid #ff7017;
 	}
 	.controls label:not(:last-child) {
