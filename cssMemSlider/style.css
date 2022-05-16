@@ -89,7 +89,7 @@ body {
 	.header-container h1 {
 		font-size: 22px;
 		text-align: center;
-		letter-spacing: 1px;
+		letter-spacing: 0.9px;
 	}
 }
 
@@ -243,7 +243,7 @@ main {
 	.container .slider-panel {
 		height: auto;
 		padding: 10px 12px;
-		flex-direction: column;
+		flex-direction: column-reverse;
 	}
 }
 
@@ -256,6 +256,11 @@ main {
 	position: relative;
 	height: 100%;
 	overflow: hidden;
+}
+@media (max-width: 540px) {
+	.slider-panel .pic-captions {
+		margin: 20px 0 0 0;
+	}
 }
 
 .captions-track {
@@ -299,11 +304,6 @@ main {
 	justify-content: flex-end;
 	align-items: center;
 	cursor: pointer;
-}
-@media (max-width: 540px) {
-	.slider-panel .controls {
-		margin: 20px 0 0 0;
-	}
 }
 
 .controls label {
