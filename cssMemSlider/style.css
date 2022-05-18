@@ -307,24 +307,16 @@ main {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	cursor: pointer;
 }
 
 .controls label {
-	display: inline-block;
-	height: 1.4vw;
-	width: 1.4vw;
-	border-radius: 50%;
-	border: 2px solid #ff7017;
-	background-color: #ff7017;
+	padding: 0.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	cursor: pointer;
-	-webkit-transition: background ease-in-out 0.5s,
-		border-color ease-in-out 0.5s;
-	-moz-transition: background ease-in-out 0.5s, border-color ease-in-out 0.5s;
-	-o-transition: background ease-in-out 0.5s, border-color ease-in-out 0.5s;
-	transition: background ease-in-out 0.5s, border-color ease-in-out 0.5s;
 }
-.controls label:not(:last-child) {
+/* .controls label:not(:last-child) {
 	margin-right: 7%;
 }
 @media (max-width: 768px) {
@@ -341,33 +333,48 @@ main {
 	.controls label:not(:last-child) {
 		margin-right: 1.25rem;
 	}
+} */
+
+.controls label .indicator {
+	display: inline-block;
+	height: 1.4vw;
+	width: 1.4vw;
+	border-radius: 50%;
+	border: 2px solid #ff7017;
+	background-color: #ff7017;
+	cursor: pointer;
+	-webkit-transition: background ease-in-out 0.5s,
+		border-color ease-in-out 0.5s;
+	-moz-transition: background ease-in-out 0.5s, border-color ease-in-out 0.5s;
+	-o-transition: background ease-in-out 0.5s, border-color ease-in-out 0.5s;
+	transition: background ease-in-out 0.5s, border-color ease-in-out 0.5s;
 }
 
-.controls label:hover {
+.controls label .indicator:hover {
 	background-color: #fbfcfc;
 	border-color: #fbfcfc;
 	transition: 0.4s ease-out;
 }
 
-.controls label:active {
+.controls label .indicator:active {
 	background-color: #cdcbcb;
 	border-color: #cdcbcb;
 }
 
-#slide1:checked ~ .slider-panel label:nth-of-type(1),
-#slide2:checked ~ .slider-panel label:nth-of-type(2),
-#slide3:checked ~ .slider-panel label:nth-of-type(3),
-#slide4:checked ~ .slider-panel label:nth-of-type(4),
-#slide5:checked ~ .slider-panel label:nth-of-type(5) {
+#slide1:checked ~ .slider-panel label:nth-of-type(1) .indicator,
+#slide2:checked ~ .slider-panel label:nth-of-type(2) .indicator,
+#slide3:checked ~ .slider-panel label:nth-of-type(3) .indicator,
+#slide4:checked ~ .slider-panel label:nth-of-type(4) .indicator,
+#slide5:checked ~ .slider-panel label:nth-of-type(5) .indicator {
 	background: none;
 	box-shadow: 0 0 6px 0px rgba(255, 112, 23, 0.6);
 }
 
-#slide1:checked ~ .slider-panel label:nth-of-type(1):hover,
-#slide2:checked ~ .slider-panel label:nth-of-type(2):hover,
-#slide3:checked ~ .slider-panel label:nth-of-type(3):hover,
-#slide4:checked ~ .slider-panel label:nth-of-type(4):hover,
-#slide5:checked ~ .slider-panel label:nth-of-type(5):hover {
+#slide1:checked ~ .slider-panel label:nth-of-type(1) .indicator:hover,
+#slide2:checked ~ .slider-panel label:nth-of-type(2) .indicator:hover,
+#slide3:checked ~ .slider-panel label:nth-of-type(3) .indicator:hover,
+#slide4:checked ~ .slider-panel label:nth-of-type(4) .indicator:hover,
+#slide5:checked ~ .slider-panel label:nth-of-type(5) .indicator:hover {
 	box-shadow: 0 0 6px 0px rgba(255, 255, 255, 0.6);
 }
 
