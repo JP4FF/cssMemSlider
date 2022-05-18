@@ -308,6 +308,11 @@ main {
 	justify-content: flex-end;
 	align-items: center;
 }
+@media (max-width: 540px) {
+	.slider-panel .controls {
+		margin-left: 0;
+	}
+}
 
 .controls label {
 	padding: 0.5rem;
@@ -316,24 +321,6 @@ main {
 	align-items: center;
 	cursor: pointer;
 }
-/* .controls label:not(:last-child) {
-	margin-right: 7%;
-}
-@media (max-width: 768px) {
-	.controls label {
-		height: 0.875rem;
-		width: 0.875rem;
-		border: 1px solid #ff7017;
-	}
-	.controls label:not(:last-child) {
-		margin-right: 0.625rem;
-	}
-}
-@media (max-width: 540px) {
-	.controls label:not(:last-child) {
-		margin-right: 1.25rem;
-	}
-} */
 
 .controls label .indicator {
 	display: inline-block;
@@ -349,7 +336,13 @@ main {
 	-o-transition: background ease-in-out 0.5s, border-color ease-in-out 0.5s;
 	transition: background ease-in-out 0.5s, border-color ease-in-out 0.5s;
 }
-
+@media (max-width: 768px) {
+	.controls label .indicator {
+		height: 0.875rem;
+		width: 0.875rem;
+		border: 1px solid #ff7017;
+	}
+}
 .controls label .indicator:hover {
 	background-color: #fbfcfc;
 	border-color: #fbfcfc;
